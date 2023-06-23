@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*  브라우저별로 디폴트설정을 가지고 있어 브라우저별로 표시항목이 달라지는것을 방지하기 위하여 reset.css를 준비하여 초기화
+    各ブラウザのデフォルト設定で見た目が変わるのを防止するため、reset.cssを用いて初期化を行う
+*/
+*, /* 모든요소 seletor 全称セレクタ */
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* 요소의 폭과 높이를 어떤식으로 계산하는가를 설정 デフォルトでは「要素の幅とサイズはpaddingとboarderを含めない」設定*/
+}
+
+/* 리스트 항목의 ・アイコンを非表示にする */
+ul, 
+ol {
+  list-style: none;
+}
+
+/* a링크의 밑줄과 문자색을 없게 */
+a {
+  color: inherit; /* 부모요소를 계승 */
+  text-decoration: none;
+}
+
+
+/* 폰트지정 */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000; /* #000に省略することも可能 */
+  line-height: 1; /* 行間 */
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.header-inner {
+  max-width: 1200px; /* 반응형 디자인을 할때에는 가로폭을 max-width로 지정하여 브라우저 폭에 맞춰 가변으로 표시할 수 있다. */
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex; /* ボックスの表示形式を指定する */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-menu-button {
+  display: none;
+}
+
+.header-logo {
+  display: block; /* a태그는 인라인 요소여서 복을 지정할수 없으므로 블록 요소로 지정 */
+  width: 170px; /* ロゴの幅指定 */
+}
+
+.site-menu ul {
+  display: flex; /* ナビゲーション項目を横並びに */
+}
+
+.site-menu ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #24211b;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  display: block;
+  width: 235px;
+}
+
