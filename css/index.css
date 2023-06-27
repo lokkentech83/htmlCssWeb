@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* 첫화면 */
+.first-view {
+  /*height: 100vh;*/ /* viewport height ブラウザの高さに対する割合を指定する単位 브라우저 기준으로 100%의 높이만큼을 띄운다 브라우저에 의존하므로 디스플레이에 따라서 적절하게 계산되서 표시*/
+  height: calc(100vh - 110px); /* viewport height에서 상단메뉴 110px을 뺀 높이만큼 */
+  background-image: url(../images/index/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* 가로세로 비율을 유지한채로 영역을 완전히 덮는다. */
+  display: flex; /* flexbox로... */
+  align-items: center;
+}
+
+.first-view-text {
+  width: 100%;
+  max-width: 1200px; /* 해당 div 영역의 최대 사이즈 1200 */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.first-view-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  line-height: 72px;
+
+}
+
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.lead p {
+  line-height: 2; /* 행간 */
+  text-align: center;
+}
+
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-button {
+  background-color: #f4dd64;
+  display: inline-block;
+  min-width: 180px; /* 최소폭 */
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+/* mouse hover */
+.link-button:hover {
+  background-color: #d8b500;
+}
+
+
+@media (max-width : 800px) {
+
+  .first-view {
+    height: calc(100vh - 50px);
+    background-image: url(../images/index/bg-main-sp.jpg); /* 모바일버전을 구축할때에는 이미지를 잘라서 사용하는 경우가 많다. */
+    align-items: flex-start;
+  }
+
+  .first-view-text {
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+
+  .first-view-text h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .first-view-text p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .lead {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .lead p {
+    text-align: left;
+  }
+}

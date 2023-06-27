@@ -26,7 +26,8 @@ a {
 
 /* 폰트지정 */
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #000000; /* #000に省略することも可能 */
   line-height: 1; /* 行間 */
@@ -81,5 +82,110 @@ img {
 .footer-logo {
   display: block;
   width: 235px;
+  margin-top: 90px;
 }
 
+/* 電話番号 */
+.footer-tel {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 28px;
+}
+
+/* 営業時間 */
+.footer-time {
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 90px;
+}
+
+/* 미디어 쿼리를 이용하여 브레이크포인트에 해당하는 조건에 도달했을때 css를 적용 */
+@media (max-width : 800px) {
+  /* 네비게이션 메뉴를 세로로 */
+  .site-menu ul {
+    display: block;
+    text-align: center;
+  }
+  
+  .site-menu li {
+    margin-top: 20px;
+  }
+  
+  /* 헤더를 고정 */
+  .header {
+    position: fixed; /* 스크롤 쫓아가지 않게 고정 */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 50px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .header-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%; /* 부모요소에 다 들어가도록 100% 지정 */
+    position: relative;
+  }
+
+  .header-logo {
+    width: 100px;
+  }
+
+  /* 모바일의 경우 햄버거메뉴 */
+  .header-site-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    background-color: #736E62;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: none;
+  }
+
+  .header-site-menu.is-show {
+    display: block;
+  }
+
+  .toggle-menu-button {
+    display: block;
+    width: 44px;
+    height: 34px;
+    background-image: url(../images/common/icon-menu.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none; /* 눌렀을때 표시되는 枠線を削除する */
+  }
+
+  .main {
+    padding-top: 50px;
+  }
+
+  .footer-logo {
+    margin-top: 60px;
+  }
+
+  .footer-tel {
+    font-size: 20px;
+  }
+
+  .copyright {
+    margin-top: 50px;
+  }
+
+
+}
