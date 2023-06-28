@@ -104,7 +104,9 @@ img {
   margin-top: 90px;
 }
 
-/* 미디어 쿼리를 이용하여 브레이크포인트에 해당하는 조건에 도달했을때 css를 적용 */
+/* 미디어 쿼리를 이용하여 브레이크포인트에 해당하는 조건에 도달했을때 css를 적용 
+ * 관련 학습내용 https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Media_queries 
+*/
 @media (max-width : 800px) {
   /* 네비게이션 메뉴를 세로로 */
   .site-menu ul {
