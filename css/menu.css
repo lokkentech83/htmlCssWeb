@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+.title {
+  height: 310px;
+  background-image: url(../images/menu/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.item-list {
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid; /* グリッド指定 */
+  /* 240pxの列を3作るように指定 */
+  /* grid-template-columns: repeat(3, 240px);  */
+
+  /* auto-fit을 지정하는것으로 브라우저에서 표시폭을 계산하여 칼럼수를 계산 */
+  grid-template-columns: repeat(auto-fit, 240px);
+
+  column-gap: 95px; /* 칼럼간의 간격 */
+  row-gap: 70px; /* 행간의 간격 */
+  justify-content: center;
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.item-list .price {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.item-list li {
+  position: relative;
+}
+
+/* 아이템의 영어표기 */
+.item-list .item-label {
+  position: absolute;
+  top: 0;
+  /* 오른쪽 위에서 18px 나온곳에 위치 */
+  left: calc(100% + 18px);
+  font-size: 10px;
+  white-space: nowrap;
+  /* 요소를 회전시킬 기준점을 지정한다 (왼쪽 위를 기준으로) */
+  transform-origin: top left;
+  /* 90도 회전한다 */
+  transform: rotate(90deg);
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width:800px) {
+
+  .item-list {
+    margin-top: 45px;
+    row-gap: 40px;
+  }
+  
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 参考書籍：HTML＆CSSとWebデザインが1冊できちんと身につく本 -->
+  <meta charset="UTF-8">
+  <title>HTML レスポンシブページ作成テストページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 스마트폰에 제대로 표시하기 위하여 추가하는 요소, 폭을 디바이스의 폭에 맞출것 -->
+  <meta name="description" content="テストページの概要"><!-- ページの概要文を書く -->
+  <!-- jquery -->
+  <script
+			  src="https://code.jquery.com/jquery-3.7.0.slim.js"
+			  integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
+			  crossorigin="anonymous"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+  <script src="../js/common.js"></script>
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/flex.css" />
+
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="../index.html">
+        <img src="../images/common/logo-header.png" alt="KISSA">
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="../html/concept.html">CONCEPT</a></li>
+            <li><a href="../html/menu.html">MENU</a></li>
+            <li><a href="../html/shop.html">SHOP</a></li>
+            <li><a href="../html/access.html">ACCESS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- main start -->
+  <main class="main">
+    <div class="flex-test-div">
+      <h3>flex</h3>
+      <ul class="flex-container">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>flex-direction: row</h3>
+      <ul class="flex-container dir-row">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>flex-direction: row-reverse</h3>
+      <ul class="flex-container dir-row-rev">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>flex-direction: column</h3>
+      <ul class="flex-container dir-col">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>flex-direction: column-reverse</h3>
+      <ul class="flex-container dir-col-rev">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>justify-content: flex-start</h3>
+      <ul class="flex-container jf-cont-fl-st">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>justify-content: flex-end</h3>
+      <ul class="flex-container jf-cont-fl-ed">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>justify-content: center</h3>
+      <ul class="flex-container jf-cont-fl-ct">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>justify-content: space-around</h3>
+      <ul class="flex-container jf-cont-fl-sa">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>justify-content: space-between</h3>
+      <ul class="flex-container jf-cont-fl-sb">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>
+        align-items: stretch
+      </h3>
+      <ul class="flex-container al-item-st">
+        <li class="flex-item" style="height: auto;">item1</li>
+        <li class="flex-item" style="height: auto;">item2</li>
+        <li class="flex-item" style="height: auto;">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>
+        align-items: flex-start
+      </h3>
+      <ul class="flex-container al-item-fs">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>
+        align-items: center
+      </h3>
+      <ul class="flex-container al-item-ct">
+        <li class="flex-item">item1</li>
+        <li class="flex-item" style="height: 220px;">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>
+        align-items: flex-end
+      </h3>
+      <ul class="flex-container al-item-fe">
+        <li class="flex-item">item1</li>
+        <li class="flex-item" style="height: 220px;">item2</li>
+        <li class="flex-item">item3</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>
+        flex-wrap: nowrap
+      </h3>
+      <ul class="flex-container fl-wr-no">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>
+        <li class="flex-item">item3</li>
+        <li class="flex-item">item4</li>
+        <li class="flex-item">item5</li>
+        <li class="flex-item">item6</li>
+        <li class="flex-item">item7</li>
+        <li class="flex-item">item8</li>
+        <li class="flex-item">item9</li>
+      </ul>
+    </div>
+    <div class="flex-test-div">
+      <h3>
+        flex-wrap: wrap
+      </h3>
+      <ul class="flex-container fl-wr-wr">
+        <li class="flex-item">item1</li>
+        <li class="flex-item">item2</li>s
+        <li class="flex-item">item3</li>
+        <li class="flex-item">item4</li>
+        <li class="flex-item">item5</li>
+        <li class="flex-item">item6</li>
+        <li class="flex-item">item7</li>
+        <li class="flex-item">item8</li>
+        <li class="flex-item">item9</li>
+      </ul>
+    </div>
+  </main>
+  <!-- main end -->
+  <!-- footer start -->
+  <footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li><a href="../html/concept.html">CONCEPT</a></li>
+        <li><a href="../html/menu.html">MENU</a></li>
+        <li><a href="../html/shop.html">SHOP</a></li>
+        <li><a href="../html/access.html">ACCESS</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <img src="../images/common/logo-footer.png" alt="KISSA">
+    </a>
+    <p class="footer-tel">012-345-6789</p>
+    <p class="footer-time">OPEN Fri-Sun 11:00 - 16:00</p>
+    <p class="copyright"><small>&copy;Kissa</small></p>
+  </footer>
+  <!-- footer end -->
+</body>
+
+</html>

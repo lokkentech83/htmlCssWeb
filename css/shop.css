@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.title {
+  display: flex;
+  flex-direction: column; /* 세로 */
+  align-items: center;
+  margin-top: 60px;
+}
+
+.title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.shop-contents {
+  width: 1080px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.shop-item {
+  flex-grow: 1;
+  max-width: 765px;
+}
+
+.shop-item h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shop-item h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  column-gap: 50px;
+  row-gap: 40px;
+
+}
+
+.item-list a {
+  display: block;
+  transition-duration: 0.2s;
+}
+
+.item-list a:hover {
+  transform: scale(1.05);
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+

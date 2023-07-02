@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+.main div {
+  height: 400px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+
+.main div:nth-child(odd) {
+  background-color: beige;
+}
+
+.flex-container {
+  margin-top: 10px;
+  flex: 1;
+  display: flex;
+
+}
+
+.flex-item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  line-height: 200px;
+  text-align: center;
+  background-color: cadetblue;
+  border: 1px solid;
+}
+
+/* direction */
+.dir-row {
+  flex-direction: row;
+}
+
+.dir-row-rev {
+  flex-direction: row-reverse;
+}
+
+.dir-col {
+  flex-direction: column;
+}
+
+.dir-col-rev {
+  flex-direction: column-reverse;
+}
+
+/* justify content */
+.jf-cont-fl-st {
+  justify-content: flex-start;
+}
+
+.jf-cont-fl-ed {
+  justify-content: flex-end;
+}
+.jf-cont-fl-ct {
+  justify-content: center;
+}
+.jf-cont-fl-sa {
+  justify-content: space-around;
+}
+.jf-cont-fl-sb {
+  justify-content: space-between;
+}
+
+/* align-items */
+.al-item-st {
+  align-items: stretch;
+  height: 90%; /* 부모요소 높이를 설정 */
+}
+.al-item-fs {
+  align-items: flex-start;
+}
+.al-item-fe {
+  align-items: flex-end;
+}
+.al-item-ct {
+  align-items: center;
+}
+
+/* flex-wrap */
+.fl-wr-no {
+  flex-wrap: nowrap;
+}
+.fl-wr-wr {
+  flex-wrap: wrap;
+}

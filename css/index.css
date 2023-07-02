@@ -92,6 +92,43 @@
   margin-right: auto;
 }
 
+.item-list {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  overflow: auto;
+}
+
+.item-list li {
+  flex-shrink: 0; /* 브라우저 너비 안으로 떨어지도록 조정되고 있던 사이즈를 shrink를 0으로 지정하는것으로 원래의 사이즈로 */
+  width: 260px;
+  margin-left: 75px;
+}
+/* 상품표시란의 상세스타일 조정 */
+.item-list li:first-child {
+  margin-left: 0;
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.item-list .price {
+  font-weight: bold;
+  margin-top: 15px;
+}
 
 @media (max-width : 800px) {
 
@@ -123,5 +160,15 @@
 
   .lead p {
     text-align: left;
+  }
+
+  .item-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item-list li {
+    width: 220px;
+    margin-left: 30px;
   }
 }
