@@ -69,6 +69,10 @@ img {
   margin-right: 20px;
 }
 
+.site-menu ul li a:hover {
+  font-weight: bold;
+}
+
 .footer {
   color: #ffffff;
   background-color: #24211b;

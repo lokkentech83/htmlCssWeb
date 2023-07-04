@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+.title {
+  height: 310px;
+  background-image: url(../images/access/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.main h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.main h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.map {
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 320px;
+  margin-top: 25px;
+}
+
+.contact {
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-area {
+  background-color: #f8f8f8;
+  border: 1px solid #aaaaaa;
+  margin-top: 25px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-area dt {
+  width: 200px;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.form-area dd {
+  /* 부모요소의 100%폭에서 라벨역활을 하는 dt의 200픽셀을 제외한 전부를 폭으로 가짐으로써 dt, dd로 한행을 점하는 flex요소 작성 */
+  width: calc(100% - 200px);
+  padding: 15px 0;
+}
+
+/* 필수입력항목의 표시 */
+.form-area dt .required::after {
+  content: '必須';
+  font-size: 11px;
+  color: #eb4f32;
+  margin-left: 10px;
+}
+
+.input-text {
+  width: 100%;
+  max-width: 280px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 24px;
+}
+
+.select-box {
+  width: 200px;
+  height: 40px;
+}
+
+.radio-button {
+  display: block;
+  margin-top: 20px;
+}
+
+.radio-button:first-child {
+  
+}
